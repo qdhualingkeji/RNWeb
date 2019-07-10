@@ -32,6 +32,37 @@ $(function () {
 	//初始化发表评论表单
 	AjaxInitForm('feedback_form', 'btnSubmit', 1);
 	
+	var language=getQueryString("language");
+	if(language==""||language==null)
+		language="Chinese";
+	
+	$("#wzsy_a").attr("href","index.html?language="+language);	
+	$("#sheji_a").attr("href","products.html?id=315&language="+language);
+	$("#xkzz_a").attr("href","products.html?id=316&language="+language);
+	$("#xyaz_a").attr("href","productShow.html?id=300&language="+language);
+	$("#sbkj_a").attr("href","products.html?id=318&language="+language);
+	$("#bjcl_a").attr("href","productShow.html?id=301&language="+language);
+	$("#hxpzdjysb_a").attr("href","products.html?id=320&language="+language);
+	
+	if(language=="Chinese"){
+		$("#wzsy_p").text("网站首页");
+		$("#sheji_p").text("设计");
+		$("#xkzz_p").text("靴辊制造");
+		$("#xyaz_p").text("靴压安装");
+		$("#sbkj_p").text("设备开机");
+		$("#bjcl_p").text("备件材料");
+		$("#hxpzdjysb_p").text("化学品自动加药设备");
+	}
+	else if(language=="English"){
+		$("#wzsy_a").text("Web index");
+		$("#sheji_p").text("Design");
+		$("#xkzz_p").text("Manufacture");
+		$("#xyaz_p").text("Install");
+		$("#sbkj_p").text("Start up");
+		$("#bjcl_p").text("Spare parts");
+		$("#hxpzdjysb_p").text("Automatic Chemical equipment");
+	}
+	
 	var id=getQueryString("id");
 	var content="";
 	if(id==315){
@@ -2155,7 +2186,8 @@ function getQueryString(name){
 				<i class="iconfont icon-dianhua"></i><span>联系电话：</span>
           		<h3>15902296301&nbsp;&nbsp;18952076682</h3>
            </div>
-            <div class="zhongwen"><a href="/index.aspx"> <i class="iconfont icon-depponzhongguoditu"></i>中文网站</a></div>
+            <div class="zhongwen"><a href="products.html"> <i class="iconfont icon-depponzhongguoditu"></i>中文网站</a></div>
+            <div class="zhongwen"><a href="products.html?language=English"> <i class="iconfont icon-depponzhongguoditu"></i>英文网站</a></div>
         </div>
 	</div>
 </div>
@@ -2167,25 +2199,25 @@ function getQueryString(name){
 		<div class="top-middle">
 			<ul id="nav" class="nav clearfix">
 				<li class="nLi active ">
-					<h3><a id="wzsy_a" href="index.html"><p id="wzsy_p">网站首页</p></a></h3>
+					<h3><a id="wzsy_a"><p id="wzsy_p"></p></a></h3>
 				</li>
 				<li class="nLi">
-					<h3><a id="sheji_a" href="products.html?id=315"><p id="sheji_p">设计</p></a></h3>
+					<h3><a id="sheji_a"><p id="sheji_p"></p></a></h3>
 				</li>
 				<li class="nLi  ">
-					<h3><a id="xkzz_a" href="products.html?id=316" ><p id="xkzz_p">靴辊制造</p></a></h3>
+					<h3><a id="xkzz_a"><p id="xkzz_p"></p></a></h3>
 				</li>
 				<li class="nLi  ">
-					<h3><a id="xyaz_a" href="products.html?id=317" ><p id="xyaz_p">靴压安装</p></a></h3>
+					<h3><a id="xyaz_a"><p id="xyaz_p"></p></a></h3>
 				</li>
 				<li class="nLi  ">
-					<h3><a id="sbkj_a" href="products.html?id=318" ><p id="sbkj_p">设备开机</p></a></h3>
+					<h3><a id="sbkj_a"><p id="sbkj_p"></p></a></h3>
 				</li>
 				 <li class="nLi  ">
-					<h3><a id="bjcl_a" href="products.html?id=319" ><p id="bjcl_p">备件材料</p></a></h3>
+					<h3><a id="bjcl_a"><p id="bjcl_p"></p></a></h3>
 				</li>
 				 <li class="nLi  ">
-					<h3><a id="hxpzdjysb_a" href="products.html?id=320" ><p id="hxpzdjysb_p">化学品自动加药设备</p></a></h3>
+					<h3><a id="hxpzdjysb_a"><p id="hxpzdjysb_p"></p></a></h3>
 				</li>
 			</ul>
 
@@ -2302,6 +2334,7 @@ function getQueryString(name){
 	
 </footer>
 
+<!--
 <script>
 var _hmt = _hmt || [];
 (function() {
@@ -2311,6 +2344,7 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
+-->
 <!-- 客服 -->
 <div class="lxfx">
    <ul>

@@ -34,8 +34,17 @@ $(function () {
 	if(language==""||language==null)
 		language="Chinese";
 		
+	$("#wzsy_a").attr("href","index.html?language="+language);	
+	$("#sheji_a").attr("href","products.html?id=315&language="+language);
+	$("#xkzz_a").attr("href","products.html?id=316&language="+language);
+	$("#xyaz_a").attr("href","productShow.html?id=300&language="+language);
+	$("#sbkj_a").attr("href","products.html?id=318&language="+language);
+	$("#bjcl_a").attr("href","productShow.html?id=301&language="+language);
+	$("#hxpzdjysb_a").attr("href","products.html?id=320&language="+language);
+	
 	var companyIntroDiv=$("#company_intro_div");
 	if(language=="Chinese"){
+		$("#wzsy_p").text("网站首页");
 		$("#sheji_p").text("设计");
 		$("#xkzz_p").text("靴辊制造");
 		$("#xyaz_p").text("靴压安装");
@@ -44,6 +53,7 @@ $(function () {
 		$("#hxpzdjysb_p").text("化学品自动加药设备");
 	}
 	else if(language=="English"){
+		$("#wzsy_a").text("Web index");
 		$("#sheji_p").text("Design");
 		$("#xkzz_p").text("Manufacture");
 		$("#xyaz_p").text("Install");
@@ -15779,25 +15789,25 @@ function getQueryString(name){
 		<div class="top-middle">
 			<ul id="nav" class="nav clearfix">
 				<li class="nLi active ">
-					<h3><a href="index.html"><p>网站首页</p></a></h3>
+					<h3><a id="wzsy_a"><p id="wzsy_p"></p></a></h3>
 				</li>
 				<li class="nLi">
-					<h3><a href="products.html?id=315"><p id="sheji_p"></p></a></h3>
+					<h3><a id="sheji_a"><p id="sheji_p"></p></a></h3>
 				</li>
 				<li class="nLi  ">
-					<h3><a href="products.html?id=316" ><p id="xkzz_p"></p></a></h3>
+					<h3><a id="xkzz_a"><p id="xkzz_p"></p></a></h3>
 				</li>
 				<li class="nLi  ">
-					<h3><a href="productShow.html?id=300" ><p id="xyaz_p"></p></a></h3>
+					<h3><a id="xyaz_a"><p id="xyaz_p"></p></a></h3>
 				</li>
 				<li class="nLi  ">
-					<h3><a href="products.html?id=318" ><p id="sbkj_p"></p></a></h3> 
+					<h3><a id="sbkj_a"><p id="sbkj_p"></p></a></h3> 
 				</li>
 				 <li class="nLi  ">
-					<h3><a href="productShow.html?id=301" ><p id="bjcl_p"></p></a></h3>
+					<h3><a id="bjcl_a"><p id="bjcl_p"></p></a></h3>
 				</li>
 				 <li class="nLi  ">
-					<h3><a href="products.html?id=320" ><p id="hxpzdjysb_p"></p></a></h3>
+					<h3><a id="hxpzdjysb_a"><p id="hxpzdjysb_p"></p></a></h3>
 				</li>
 			</ul>
 
@@ -15999,6 +16009,7 @@ function getQueryString(name){
 	
 </footer>
 
+<!--
 <script>
 var _hmt = _hmt || [];
 (function() {
@@ -16008,6 +16019,7 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
+-->
 <!-- 客服 -->
 <div class="lxfx">
    <ul>
