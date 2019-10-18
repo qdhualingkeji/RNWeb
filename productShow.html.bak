@@ -669,13 +669,6 @@ $(function () {
 		$("#maincon").append("<div>过滤元件,         1 件</div>");
 		$("#maincon").append("<div>放大卡            2 件</div>");
 		$("#maincon").append("<div>靴套转动环轴承    1 套</div>");
-		 
- 
-   
- 
-   
-
-
 		
 		zoom1Href="FileUPLoad/ProductFile/636754592736567321.jpg";
 		zoom1ImgSrc="FileUPLoad/ProductFile/636754592736567321.jpg";
