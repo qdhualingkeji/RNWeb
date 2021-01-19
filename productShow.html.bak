@@ -117,7 +117,7 @@ $(function () {
 		$("#maincon").append("<img src=\"templates/jtdl/images/20200711150007.jpg\" style=\"width:400px;height:711px;\"/>");
 		$("#maincon").append("</div>");
 		$("#maincon").append("<div style=\"margin-top:20px;\">");
-		$("#maincon").append("<img src=\"templates/jtdl/images/20200711150012.jpg\" style=\"width:400px;height:711px;\"/>");
+		$("#maincon").append("<img src=\"templates/jtdl/images/20200711150012.jpg\" style=\"width:400px;height:300px;\"/>");
 		$("#maincon").append("</div>");
 		
 		zoom1Href="FileUPLoad/ProductFile/636754690572337321.jpg";
